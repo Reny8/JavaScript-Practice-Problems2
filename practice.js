@@ -34,14 +34,12 @@ function compress(word) {
             count ++
         }
         else {
-            num = count.toString()
-            finalResult += num + wordLetters
+            finalResult += count + wordLetters
             wordLetters = word[letter]
             count = 1
         }
     }
-    num = count.toString()
-    finalResult + num + wordLetters
+    finalResult + count + wordLetters
     return finalResult    
 }
 words = compress("aaaaabbbbccccaaaaaabb ")
